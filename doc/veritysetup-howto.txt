@@ -1,0 +1,21 @@
+
+Creating an EXT2 file system and the hash device
+================================================
+
+head -c 4194304 /dev/zero > datadev
+mke2fs -b 4096 -q datadev -d appdir
+veritysetup format datadev hashdev
+
+Opening the verity device and mounting the file system
+======================================================
+
+sudo veritysetup verify datadev hashdev $(ROOTHASH)
+sudo veritysetup open datadev vroot hashdev $(ROOTHASH)
+mkdir -p ./mnt
+sudo mount -o ro /dev/mapper/vroot ./mnt
+
+Unmounting the file system and closing the verity device
+========================================================
+
+sudo umount ./mnt
+sudo veritysetup close vroot

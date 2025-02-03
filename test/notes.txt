@@ -1,0 +1,2 @@
+
+    sudo veritysetup verify /dev/mapper/rootfs_thin /dev/sda5 <roothash>

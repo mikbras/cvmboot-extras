@@ -1,0 +1,12 @@
+- Integrate thin provisioning with pipeline (current task)
+- Define Azure integration requirements (e.g., MAA, AKV, Guest Agent, etc.)
+- Get new CA issued for signing cvmboot (or use existing one)
+- Restore ephemeral upper layer on reboot
+- Improve/write documentation
+- Protect EFI system partition for modification
+- Protect portion of resource disk mounted on /mnt directory
+- Optional support for dm-integrity
+- Extract Linux command line parameters from UKI
+- Explore TPM NV-index approach
+- Review Swamy’s team’s CVM presentation (derive additional requirements for cvmboot)
+- Support cvmboot for Linux Mariner distribution

@@ -1,0 +1,16 @@
+
+    # Repair the file system first:
+    $ sudo e2fsck -f /dev/sdb3
+
+    # Resize the file system to the minimum size:
+    $ sudo resize2fs -M /dev/sdb3
+
+    # Get number of blocks in the file system:
+    $ sudo tune2fs -l /dev/sdb3 | grep "Block size:"
+
+    # Get the number of block in the file system:
+    $ sudo tune2fs -l /dev/sdb3 | grep "Block count:"
+
+    # Use fdisk to remove and readd the partition with a smaller size
+
+    $ sudo e2fsck -f /dev/sdb3

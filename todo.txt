@@ -1,0 +1,84 @@
+
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+    (A) cvmdisk: Get linux cmdline from UKI
+    (A) cvmdisk: Make EFI system partition (ESP) ephemeral
+    (A) cvmdisk: reject non-VHD's
+    (A) cvmdisk: "disk" subcommand
+
+    BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+    (B) Secure /mnt mount
+    (B) Support dm-integrity (or dm-ephemeral)
+
+    CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+    (C) Consider placing verity over thin data/meta partitions
+    (C) Correct PMBR mismatch on final SCSI image
+    (C) Implement frags_find() variant that scans for zero blocks
+    (C) Support shelling into thinly-provisioned VHDs
+    (C) Warn about tiny ext4 partitions
+    (C) Remove SCSI support
+    (C) cvmdisk: match rootfs size to resource disk size
+    (C) look into NVIndex approach
+
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+    (X) cvmdisk: "protect" subcommand should reject non-prepared disks
+    (X) cvmdisk: Clean up cvmdisk usage messages
+    (X) cvmdisk: conditionally compile out syncs and sleeps
+    (X) cvmdisk: refuse to strip unprotect or already stripped images
+    (X) Perform stripping automatically
+    (X) Use "cvmdisk <subcommand> <input-vhd> <output-vhd>..." style
+    (X) Make --use-thin-provisioning the default
+    (X) Pick highest versioned UKI
+    (X) cvmdisk: use more unique naming than /dev/mapper/rootfs_thin
+    (X) cvmdisk: calculate ext4 size after expansion
+    (X) cvmdisk: add strip tool to create VHD without EXT4 partition
+    (X) Eliminate resolv.conf updates? --skip-resolv-conf
+    (X) restore first line to events file (but ignore in bootloader)
+    (X) cvmdisk: change format of signer to SHA256(N+E)
+    (X) add vhd tool
+    (X) Write new top-level README.md
+    (X) integrate signer executable
+    (X) remove public-key parameter from prepare
+    (X) Remove unused code
+    (X) add binary data capability to TPM events file
+    (X) cross-check public key modulus with signature modulus
+    (X) Rename project to "cvmboot"
+    (X) cvmdisk: bprintf()?
+    (X) cvmboot: crosscheck the signer with the public.pem file
+    (X) Get rid of 'manifest' and use 'rootfs' file (that contains root hash)
+    (X) Use 'cmdline' file rather than 'veritboot.conf'
+    (X) cvmboot: reduce memory usage associated with kernel/initrd loading
+    (X) cvmdisk: improve usage documentation
+    (X) cvmboot: when using direct-boot, remove EFI hash-device
+    (X) cvmdisk: when using direct-boot, avoid grub configuration
+    (X) split UKI into kernel and initd?
+    (X) create /boot/efi/EFI/cvmboot directory?
+    (X) cvmdisk: add --user=user:password:sshkeys option
+    (X) cvmdisk: add --hostname option
+    (X) cvmdisk: split out subcommands: prepare, specialize, protect
+    (X) cvmboot: add kernel args to cvmboot.conf
+    (X) rework _execf to use dynamic buffer
+    (X) cvmboot: support kernel boot
+    (X) Cleanup of mount points on abnormal exit
+    (X) cvmboot: add log/extend events
+    (X) cvmdisk: write pubkey to EFI partition
+    (X) cvmdisk: create verity signature partition
+    (X) cvmdisk: put install components in one place (config)
+    (X) cvmdisk: incorporate initramfs script
+    (X) cvmdisk: incorporate update grub script
+    (X) cvmdisk: install bootloader
+    (X) cvmdisk: incorporate shrink.sh script
+    (X) cvmdisk: incorporate patch_fstab script
+    (X) cvmboot: read/verify verity signature
+    (X) cvmboot: update PCR[11]
+    (X) Remove superhash
+    (X) cvmdisk: write rootfs roothash to EFI partition
+    (X) cvmboot: Set efivars variable for rootfs roothash
+    (X) cvmdisk: fix partition roothash selection for EFI veritysig
+    (X) initrd: remove measurement of rootfs roothash (and tpm tool)
+    (X) cvmboot: read/verify roothashes from the manifest file
+    (X) cvmdisk: print expected PCR value for EFI roothash.
+

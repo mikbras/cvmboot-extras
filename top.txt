@@ -1,0 +1,9 @@
+1) Thin-provisioning integration with pipeline (Jeremy/Mike)
+2) EFI protection (Mike)
+3) Dm-integrity as default option (Vikas)
+4) Documentation
+5) Move the repo to github/Microsoft organization (Mike)
+6) MAA attestation using signed boot loader (Vikas/Mike)
+7) Issue “Confidential Computing CA” and sign cvmboot loader
+8) Open-sourcing
+9) Binary release

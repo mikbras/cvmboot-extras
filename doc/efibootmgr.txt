@@ -1,0 +1,3 @@
+efibootmgr
+efibootmgr -b 4 -B
+efibootmgr -c -g -d /dev/sda -p 1 -w -L cvmboot -l /EFI/boot/cvmboot.efi

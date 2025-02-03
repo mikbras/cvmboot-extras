@@ -1,0 +1,2 @@
+PCR11:string:"os-image-identity":{"signer":"","svn":"1","diskId":"singularity.ubuntu-22.04","eventVersion":"1"}
+PCR11:string:"node-policy-identity":{"signer":"7e7cf4eb1953a56e6925564c2870c3cb38823ee2916a45a9a7e364b280ff3e8d","svn":"1","policyId":"openai-whisper","eventVersion":"1"}

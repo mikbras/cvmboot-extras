@@ -1,0 +1,2 @@
+
+Seeing this: "GRUB failed to install to the following devices: /dev/sda1

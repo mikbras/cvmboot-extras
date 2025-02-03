@@ -1,0 +1,2 @@
+sudo apt install tpm2-tools -y
+sudo tpm2_eventlog /sys/kernel/security/tpm0/binary_bios_measurements
