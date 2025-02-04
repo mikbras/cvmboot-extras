@@ -45,6 +45,7 @@ push:
 	cp --sparse=auto image.vhd image
 	truncate --size=-512 image
 	sudo dd if=image of=$(SCSI) bs=4096 status=progress
+	rm -f image
 
 clean:
 	sudo rm -rf image.vhd image.vhd.tmp image
