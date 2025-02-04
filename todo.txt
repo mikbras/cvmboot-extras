@@ -3,8 +3,8 @@
 
     (A) cvmdisk: Get linux cmdline from UKI
     (A) cvmdisk: Make EFI system partition (ESP) ephemeral
-    (A) cvmdisk: reject non-VHD's
     (A) cvmdisk: "disk" subcommand
+    (A) cvmdisk: log verity output?
 
     BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
@@ -24,6 +24,7 @@
 
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+    (X) cvmdisk: reject non-VHD's
     (X) cvmdisk: "protect" subcommand should reject non-prepared disks
     (X) cvmdisk: Clean up cvmdisk usage messages
     (X) cvmdisk: conditionally compile out syncs and sleeps
