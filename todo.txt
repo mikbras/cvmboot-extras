@@ -15,15 +15,15 @@
 
     (C) Consider placing verity over thin data/meta partitions
     (C) Correct PMBR mismatch on final SCSI image
-    (C) Implement frags_find() variant that scans for zero blocks
     (C) Support shelling into thinly-provisioned VHDs
     (C) Warn about tiny ext4 partitions
-    (C) Remove SCSI support
     (C) cvmdisk: match rootfs size to resource disk size
-    (C) look into NVIndex approach
+    (C) Investigate into NVIndex approach
 
     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+    (X) Remove SCSI support
+    (X) Implement frags_find() variant that scans for zero blocks
     (X) cvmdisk: reject non-VHD's
     (X) cvmdisk: "protect" subcommand should reject non-prepared disks
     (X) cvmdisk: Clean up cvmdisk usage messages
